@@ -23,13 +23,23 @@
 html, body{
     padding: 0;
     margin: 0;
+    text-decoration: none;
 
+}
+
+
+
+body *{
+    transition: 0.3s;
 }
 
 h1, h2, h3, h4, h5, h6, strong{
     color: var(--mainText);
     font-family: 'Russo One', sans-serif;
     font-weight: 500;
+    
+    
+
 
 }
 
@@ -76,6 +86,9 @@ h6 { font-size: 16px;}
 
 }
 
+/* INTRO PAGE */
+
+
 .intro-wrapper{
     background-color: var(--secondaryColor);
     border:1px solid var(--borderColor);
@@ -93,7 +106,19 @@ h6 { font-size: 16px;}
          'left-column right-column'
     ;
 
+    
+
 }
+
+.greeting-wrapper{
+    display: grid;  
+    text-align: center;
+    align-content: center;
+    
+    min-height: 10em;
+}
+
+/* NAVIGATION */
 
 .nav-wrapper{
     border-radius: 5px 5px 0 0;
@@ -107,6 +132,10 @@ h6 { font-size: 16px;}
     
 }
 
+#navigation a{
+    color: var(--mainText);
+}
+
 #navigation{
     margin:0;
     padding: 10px;
@@ -118,7 +147,7 @@ h6 { font-size: 16px;}
 
 }
    
-
+/* BROWSER DOTS */
 
 .dot-wrapper{
     display: flex;
@@ -151,11 +180,12 @@ h6 { font-size: 16px;}
 
 .left-column{
     grid-area: left-column;
+    
     padding-top: 50px;
     padding-bottom: 50px;
     
 }
-
+/* PROFILE PICTURE */
 #profile_pic{
 display: block;
 margin: 0 auto;
@@ -165,10 +195,15 @@ width: 200px;
 object-fit: cover;
 border: 2px solid var(--borderColor);
 }
+/* THEMES */
+.theme-text{
+    margin-top: 1rem;
+}
 
 #theme-option-wrapper{
     display:flex;
     justify-content: center;
+    margin-top: 1rem;
 
 }
 
@@ -193,7 +228,7 @@ border: 2px solid var(--borderColor);
 .theme-dot:hover{
     border-width: 5px;
 }
-
+/* THEME OPTIONS */
 #light-mode{
     background-color: #fff;
 }
@@ -210,6 +245,16 @@ border: 2px solid var(--borderColor);
     background-color: #7e4c74;
 }
 
+#setting-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+/* ABOUT ME  */
 .right-column{
     grid-area: right-column;
     display: grid;
@@ -235,11 +280,7 @@ border: 2px solid var(--borderColor);
     position: relative;
 }
 
-#setting-note{
-    font-size: 12px;
-    font-style: italic;
-    text-align: center;
-}
+
 
 .corner{
     width:7px;
@@ -262,9 +303,11 @@ border: 2px solid var(--borderColor);
     left: -5px;
 }
 #corner-br{
-    top:-5px;
+    bottom:-5px;
     right: -5px;
 }
+
+/* MORE ABOUT ME */
 
 .about-wrapper{
     display:grid;
@@ -273,12 +316,16 @@ border: 2px solid var(--borderColor);
     padding-bottom: 50px;
     gap: 100px;
 }
-
+.more-about-me{
+    padding-bottom: 3rem;
+}
 #skills{
     display: flex;
     justify-content: space-evenly;
     background-color: var(--previewShadow);
+    
 }
+
 
 .social-links{
     display: grid;
@@ -288,6 +335,17 @@ border: 2px solid var(--borderColor);
 
 #social_img{
     width: 100%;
+}
+
+.skill-set{
+    margin-top: 5rem;
+}
+
+
+/* POSTS */
+
+.post-page-title{
+    margin-top: .5rem;
 }
 
 .post-wrapper{
@@ -314,6 +372,10 @@ border: 2px solid var(--borderColor);
 
 }
 
+.post:hover{
+    border-width: .1rem;
+}
+
 .post-preview{
     background-color: #fff;
     padding: 15px;
@@ -328,14 +390,13 @@ border: 2px solid var(--borderColor);
     font-size: 14px;
 }
 
+.visit-site-text{
+    font-family: 'Russo One', sans-serif;
 
-.greeting-wrapper{
-    display: grid;  
-    text-align: center;
-    align-content: center;
-    
-    min-height: 10em;
 }
+
+
+
 
 #contact-form{
     display: block;
