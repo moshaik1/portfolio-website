@@ -328,7 +328,8 @@ border: 2px solid var(--borderColor);
 
 
 .social-links{
-    display: grid;
+    
+    display:grid; 
     align-content: center;
     text-align: center;
 }
