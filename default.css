@@ -410,6 +410,11 @@ border: 2px solid var(--borderColor);
     margin-bottom: 50px;
 }
 
+.getInTouch-text{
+    text-align: center ;
+    margin-top: 8px;
+}
+
 #contact-form label{
     line-height: 2.7em;
 }
